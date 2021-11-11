@@ -30,7 +30,6 @@ const androidCaps = {
    allowTestPackages: true,
   deviceName: process.env.ANDROID_DEVICE_NAME || DEFAULT_ANDROID_DEVICE_NAME,
   platformVersion: process.env.ANDROID_PLATFORM_VERSION || DEFAULT_ANDROID_PLATFORM_VERSION,
-  app: 'https://github.com/DiogenesPolanco/AppiumTestPro/assets/app-debug.apk', // Will be added in tests
   ...sauceCaps,
 };
 
@@ -43,7 +42,7 @@ const serverConfig =  {
 
 // figure out the location of the apps under test
 const GITHUB_ASSET_BASE = 'https://github.com/DiogenesPolanco/AppiumTestPro/assets';
-const LOCAL_ASSET_BASE = path.resolve(__dirname, '..', '..', '..', 'apps');
+const LOCAL_ASSET_BASE = path.resolve(__dirname,'..','..','assets');
  
 if (SAUCE_TESTING) { 
   androidCaps.app = `${GITHUB_ASSET_BASE}/app-debug.apk`;
