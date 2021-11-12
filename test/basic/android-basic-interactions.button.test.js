@@ -33,7 +33,7 @@ describe('Basic Android interactions', function () {
             el4.sendKeys("test input");
             driver.elementByAccessibilityId("onSearchRequested()").click().then((el5) => {
               driver.elementById("android:id/search_src_text").text().then((searchTextValue) => {
-                assert.equal(searchTextValue, 'test inputa'); 
+                assert.equal(searchTextValue, 'test input'); 
               });
             });
           });
