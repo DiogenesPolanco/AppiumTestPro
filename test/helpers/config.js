@@ -45,9 +45,9 @@ const GITHUB_ASSET_BASE = 'https://github.com/DiogenesPolanco/AppiumTestPro/asse
 const LOCAL_ASSET_BASE = path.resolve(__dirname,'..','..','assets');
  
 if (SAUCE_TESTING) { 
-  androidCaps.app = `${GITHUB_ASSET_BASE}/app-debug.apk`;
+  androidCaps.app = `${GITHUB_ASSET_BASE}/ApiDemos-debug.apk`;
 } else { 
-  androidCaps.app  = path.resolve(LOCAL_ASSET_BASE, 'app-debug.apk');
+  androidCaps.app  = path.resolve(LOCAL_ASSET_BASE, 'ApiDemos-debug.apk');
 } 
 module.exports =    { 
   androidCaps, sauceCaps,
